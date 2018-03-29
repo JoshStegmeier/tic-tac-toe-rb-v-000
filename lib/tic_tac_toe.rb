@@ -34,6 +34,40 @@ def input_to_index(input)
   return input_two
 end
 
+# turn_count
+# arguments: board
+# logic:
+#   1) set variable counter = 0
+#   2) for each position in the board array: If the position is not filled, do nothing. If it is filled, increment the counter by 1.
+
+def turn_count(board)
+  counter = 0
+  board.each do |spot|
+    if spot.strip == ""
+
+    else
+      counter += 1
+    end
+  end
+  counter
+end
+
+# current_player
+# arguments: board
+# logic:
+#   1) set variable "val" to the returned value from turn_count
+#   2) if "val" is even, then return X. Else, return O.
+
+def current_player(board)
+  val = turn_count(board)
+  if val % 2 == 0
+    return "X"
+  else
+    return "O"
+  end
+end
+
+
 # move
 # Arguments: This methods accepts an array, and index, and a value
 # Purpose: Changes the value of a position in an array to the user's character (X or O).
