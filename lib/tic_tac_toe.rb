@@ -275,3 +275,9 @@ def winner(board)
     return false
   end
 end
+
+def play(board)
+  while over?(board) == !true
+    turn(board)
+  end
+end
