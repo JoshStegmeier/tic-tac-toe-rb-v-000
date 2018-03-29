@@ -284,5 +284,7 @@ def play(board)
   if winner(board) == "X" || winner(board) == "O"
     winning_char = winner(board)
     puts "Congratulations #{winning_char}!"
+  elsif draw?(board) == true
+    puts "Cat's Game!"
   end
 end
