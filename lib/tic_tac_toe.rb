@@ -281,7 +281,7 @@ def play(board)
     turn(board)
   end
 
-  if won?(board) == true
+  if winner(board) == "X" || winner(board) == "O"
     winning_char = winner(board)
     puts "Congratulations #{winning_char}"
   end
