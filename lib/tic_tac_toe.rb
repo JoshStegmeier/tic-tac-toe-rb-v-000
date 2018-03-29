@@ -280,4 +280,8 @@ def play(board)
   while over?(board) == !true
     turn(board)
   end
+
+  if won?(board) == true
+    puts "Congratulations #{winner(board)}"
+  end
 end
