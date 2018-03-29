@@ -60,7 +60,7 @@ end
 # valid_move?
 # Arguments: board, index
 # Purpose: Checks to see if the user's input is a valid move.
-# Logic: 
+# Logic:
 #   1) Converts index to an integer. Stores it as the variable val.
 #   2) Value must be between 0-8
 #   3) Position must not be taken.
@@ -80,7 +80,7 @@ end
 # turn
 # Arguments: board
 # Purpose: Runs the logic for an entire turn
-# Logic: 
+# Logic:
 #   1) Asks user for a number between 1-9
 #   2) Stores the stripped input as variable "input"
 #   3) Runs the #input_to_index method, and stores the returned value as index
@@ -105,7 +105,7 @@ end
 # won?
 # Arguments: board
 # Purpose: To determine whether a game has been won.
-# Logic: 
+# Logic:
 #   1) Set the winning_combo variable to 0.
 #   2) For each of the winning combinations in the array, do the following.
 #    -- Each combination contains three values (which represent an index). Store these indexes in three variables (win_index_1,2,3)
@@ -145,7 +145,7 @@ end
 # Arguments: accepts board
 # Purpose: Checks to see if the board is full.
 # Logic:
-#   1) Creates a a variable called, all_full 
+#   1) Creates a a variable called, all_full
 #   2) Checks to see if all of the items in the board array are filled (with X's and O's).
 # Returns: True, if full. False, if not full.
 
@@ -159,7 +159,7 @@ end
 # draw?
 # Arguments: accepts board
 # Purpose: Checks to see if there is a draw.
-# Logic: 
+# Logic:
 #   1) If the full? method returns true AND the won? method returns false:
 #   2) Return true (there is a draw). Else, return false (there is not a draw)
 # Purpose: True, if draw. False, if not draw.
@@ -175,7 +175,7 @@ end
 # over?
 # Arguments: accepts board
 # Purpose: Checks to see if the game is over.
-# Logic: 
+# Logic:
 #   1) If the game is won, then it's over.
 #   2) Else, if the game is a draw, then it's over.
 #   3) Otherwise, it's not over.
