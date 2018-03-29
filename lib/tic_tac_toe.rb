@@ -283,6 +283,6 @@ def play(board)
 
   if winner(board) == "X" || winner(board) == "O"
     winning_char = winner(board)
-    puts "Congratulations #{winning_char}"
+    puts "Congratulations #{winning_char}!"
   end
 end
